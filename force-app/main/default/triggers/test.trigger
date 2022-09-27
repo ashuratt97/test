@@ -5,6 +5,7 @@ trigger UserRegistrationTrigger on UserRegistration__c (before insert, before up
         }
         if (Trigger.isUpdate){
             //UserRegistrationTriggerClass.onBeforeUpdate(Trigger.new, Trigger.oldMap);
+	      UserRegistrationTriggerClass.onBeforeUpdate(Trigger.new);
         }
     }
 }
